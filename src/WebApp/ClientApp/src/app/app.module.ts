@@ -9,6 +9,8 @@ import { initializer } from './utils/app-init';
 import { AppComponent } from './app.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
+import { FetchDataPostgresComponent } from './fetch-data-postgres/fetch-data.component';
+
 import { FetchProfileComponent } from './fetch-profile/fetch-profile.component';
 import { UserProfileClient} from './shared/api.generated.client';
 
@@ -16,7 +18,7 @@ import { UserProfileClient} from './shared/api.generated.client';
   declarations: [
     AppComponent,
     CounterComponent,
-    FetchDataComponent,
+    FetchDataComponent, FetchDataPostgresComponent,
     FetchProfileComponent
   ],
   imports: [

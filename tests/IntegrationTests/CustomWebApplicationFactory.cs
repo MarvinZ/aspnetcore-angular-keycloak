@@ -29,7 +29,7 @@
                      {
                          builder
                           .SetBasePath(Directory.GetCurrentDirectory())
-                          .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+                          .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
                      });
                     webBuilder.ConfigureTestServices(services => services
                         .AddAuthentication(options => // add a fake authentication handler
