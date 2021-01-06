@@ -13,6 +13,8 @@ import { FetchDataPostgresComponent } from './fetch-data-postgres/fetch-data.com
 
 import { FetchProfileComponent } from './fetch-profile/fetch-profile.component';
 import { UserProfileClient} from './shared/api.generated.client';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 @NgModule({
   declarations: [
@@ -22,6 +24,7 @@ import { UserProfileClient} from './shared/api.generated.client';
     FetchProfileComponent
   ],
   imports: [
+    NgbModule,
     CommonModule,
     BrowserModule,
     HttpClientModule,
