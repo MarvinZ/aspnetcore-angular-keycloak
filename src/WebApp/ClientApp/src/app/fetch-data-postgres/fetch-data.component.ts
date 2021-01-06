@@ -6,14 +6,19 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: './fetch-data.component.html'
 })
 export class FetchDataPostgresComponent {
-  public result: any;
+  public result: Dog[];
 
   constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
     console.log('weather: get=', baseUrl + 'api/v1/weatherforecasts/GetDogs');
-    http.get<any[]>(baseUrl + 'api/v1/weatherforecasts/GetDogs').subscribe(result => { // TODO: use generated API client
+    http.get<Dog[]>(baseUrl + 'api/v1/weatherforecasts/GetDogs').subscribe(result => { // TODO: use generated API client
       console.log('weather: data=', result);
       this.result = result;
     }, error => console.error(error));
   }
 }
 
+interface Dog {
+  id: number;
+  name: string;
+
+}
