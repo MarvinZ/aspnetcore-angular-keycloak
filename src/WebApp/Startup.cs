@@ -121,8 +121,8 @@ namespace WebApp
 
                 if (env.IsDevelopment())
                 {
-                    // spa.UseAngularCliServer(npmScript: "start");
-                    spa.UseProxyToSpaDevelopmentServer("http://localhost:4200"); // use 'ng serve' seperatly
+                    spa.UseAngularCliServer(npmScript: "start");
+                    //  spa.UseProxyToSpaDevelopmentServer("http://localhost:4200"); // use 'ng serve' seperatly
                 }
             });
         }

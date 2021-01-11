@@ -139,8 +139,8 @@
         "description": "Oidc Authentication",
         "flows": {
           "implicit": {
-            "authorizationUrl": "http://localhost:8080/auth/realms/master/protocol/openid-connect/auth",
-            "tokenUrl": "http://localhost:8080/auth/realms/master/protocol/openid-connect/token"
+            "authorizationUrl": "http://host.docker.internal:8080/auth/realms/master/protocol/openid-connect/auth",
+            "tokenUrl": "http://host.docker.internal:8080/auth/realms/master/protocol/openid-connect/token"
           }
         }
       }
